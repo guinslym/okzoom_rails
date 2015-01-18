@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "okzoom_rails"
   spec.version       = OkzoomRails::VERSION
   spec.authors       = ["Guinsly Mondesir"]
-  spec.email         = ["guinslym @gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.email         = ["agmond@gmx.com.br"]
+  spec.summary       = %q{A Rails implementation of OkZoom.js -- OKZoom is a jQuery plugin that produces a portable loupe of variable size and shape.}
+  spec.description   = %q{OKZoom-- https://github.com/okfocus/okzoom -- is a jQuery plugin that produces a portable loupe of variable size and shape. All other jQuery ‘zoom’ plugins we have encountered implement a square magnifying area. Ours is a circle. You want a circle.}
+  spec.homepage      = "https://github.com/guinslym/okzoom_rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
