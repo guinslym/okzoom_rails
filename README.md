@@ -24,7 +24,7 @@ Or install it yourself as:
 ## Usage
 add in `app/assets/javascripts/application.js` after jquery (below jquery)
 
-	//= require okzoom_rails
+	//= require okzoom
 
 and then
 
