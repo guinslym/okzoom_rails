@@ -22,7 +22,7 @@ Or install it yourself as:
     $ gem install okzoom_rails
 
 ## Usage
-app/assets/javascript/application.js
+add in `app/assets/javascripts/application.js` after jquery (below jquery)
 
 	//= require okzoom_rails
 
