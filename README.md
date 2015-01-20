@@ -28,10 +28,12 @@ and then in your view
 ```ruby
 <%= image_tag ('http://okfoc.us/okzoom/img/fra2.jpeg'), 
                :width => "40%", 
-               :id => "example2" %>
-#or
+               :id => "example2" 
+%>
 ```
+or
 ```html
+<!-- the image need to be smaller that's why you need to add a css property 'width' -->
 <img id="example" src="http://okfoc.us/okzoom/img/fra2.jpeg" style="width:40%">
 ```
 
