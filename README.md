@@ -2,8 +2,6 @@
 
 This is a Rails implementation of [OkZoom.js](https://github.com/okfocus/okzoom) -- OKZoom is a jQuery plugin that produces a portable loupe of variable size and shape.
 
-###Rails Demo app
-
 
 ## Installation
 
@@ -26,18 +24,26 @@ add in `app/assets/javascripts/application.js` after jquery (below jquery)
 
 	//= require okzoom
 
-and then
+and then in your view
+```ruby
+<%= image_tag ('http://okfoc.us/okzoom/img/fra2.jpeg'), :width => "40%", :id => "example2" %>
+#or
+<img id="example" src="http://okfoc.us/okzoom/img/fra2.jpeg" style="width:40%">
+```
 
 ```javascript
-$('img').okzoom({
-  width: 200,
-  height: 200,
-  round: true,
-  background: "#fff",
-  backgroundRepeat: "repeat",
-  shadow: "0 0 5px #000",
-  border: "1px solid black"
-});
+<script type="text/javascript">
+    $(function(){
+      $('#example').okzoom({
+        width: 200,
+        height: 200
+      });
+      $('#example2').okzoom({
+        width: 200,
+        height: 200
+      });
+    });
+</script>
 ```
 
 ## Contributing
