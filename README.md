@@ -26,8 +26,12 @@ add in `app/assets/javascripts/application.js` after jquery (below jquery)
 
 and then in your view
 ```ruby
-<%= image_tag ('http://okfoc.us/okzoom/img/fra2.jpeg'), :width => "40%", :id => "example2" %>
+<%= image_tag ('http://okfoc.us/okzoom/img/fra2.jpeg'), 
+               :width => "40%", 
+               :id => "example2" %>
 #or
+```
+```html
 <img id="example" src="http://okfoc.us/okzoom/img/fra2.jpeg" style="width:40%">
 ```
 
